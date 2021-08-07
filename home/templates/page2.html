@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+<body>
+{% block header %}
+    <!-- HEADER  -->
+        <section class="header">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 ptog" >
+                    <div class="blank">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 ptog">
+                    <div class="text">
+                        <h1>SIDED</h1>
+                        <P>new theme just for you</P>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock header %}
+
+    {% block ourpage %} {% include 'ourpage.html' %}{% endblock ourpage %}
+    
+{% block fussce %}
+    <section class="page-2b">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page2-blank3">
+                    <div class="page2-thirdimage">
+                        <img src="{{images.page2_img2.url}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page2-fus">
+                    <h2>Fusce metus mauris</h2>
+                    <hr>
+                    <p>
+                        suspendisse ultricles scelerisqe tellus, id sollicitudin <br>
+                        magna aliquet porititor. orci varius natoque penatibus <br>
+                        et magnis dis parturient montes, nascetur ridiculus <br>
+                        mus. Quique pharetra mautris in libero.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+{% endblock fussce %}
+ 
+{% block beautiful %}
+    <section class="page-2c">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-11">
+                <div class="page2-blank4">
+                    <div class="page2-lorem">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <hr>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque pharetra
+                            mauris in libero varius tristique. Duis eget eleifend risus. Curabitur hendrerit, elit et efficitur placerat, purus
+                            nunc fringilla orci, et condimentum dui sem sed risus. Proin sed fringilla felis. Maecenas vel felis vitae turpis
+                            bibendum accumsan. Nulla pretium tortor non vulputate scelerisque.
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            Quisque viverra dui purus, at rutrum nibh suscipit ut. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Duis cursus ac mauris maximus auctor. Nullam eget dignissim orci. Donec tincidunt blandit libero iaculis
+                            fermentum. Aliquam erat volutpat. Integer suscipit aliquam augue ac rutrum. Phasellus sit amet erat id
+                            sapien efficitur euismod.
+                        </p>
+                        <button type="button" class="page2-btn3">Message Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NONE  -->
+        <section class="none">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="nonee"></div>
+            </div>
+        </div>
+    </section>
+{% endblock beautiful %}
+
+    {% block contact %} {% include 'contact.html' %}{% endblock contact %}
+
+
+    {% block footer %} {% include 'footer.html' %} {% endblock footer %}

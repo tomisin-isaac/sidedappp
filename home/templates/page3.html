@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+<body>
+    <!-- HEADER  -->
+{% block header %}
+    <section class="header">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 ptog" >
+                <div class="blank">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 ptog">
+                <div class="text">
+                    <h1>SIDED</h1>
+                    <P>new theme just for you</P>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock header %}
+
+{% block place %}
+    <section class="page-3a">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page3-blank">
+                    <div class="page3-firstimage">
+                        <img src="{{images.page3_img1.url}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock place %}
+
+{% block fussce %}
+    <section class="page-3b">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page3-blank3">
+                    <img src="{{images.page3_img2.url}}" alt="">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page3-pha">
+                    <h2>Phasellus sit amet erat id</h2>
+                    <hr>
+                    <p>
+                        Sided Template has 3 HTML pages. <a href="{% url 'index' %}">index,</a> <a href="{% url 'page2' %}">Page 2,</a> and <br>
+                        <a href="{% url 'page3' %}">Page 3.</a> This is Bootstrap v4.2.1 layout. You may visit <br>
+                        <a href="#">templatemo page</a> for latest updates. Thank you
+                    </p>
+                    <a href="{% url 'page2' %}"><button type="button" class="page3-btn">Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>   
+{% endblock fussce %}
+
+
+{% block beautiful %}
+    <section class="page-3c">
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-lg-6">
+                <div class="page3-blank4">
+                    <div class="page3-secondimage">
+                        <img src="{{images.page3_img3.url}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-6 col-lg-6">
+                <div class="page3-nulla">
+                    <h2>Nulla a eros at diam</h2>
+                    <hr>
+                    <p>
+                        Quisque pharetra mauris in libero <br>
+                        varius tristique. Etiam tristique <br>
+                        pellentesque metus at consequat. <br>
+                        Fusce a porttitor. This is 50% alpha <br>
+                        background.
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        Phasellus nec faucibus erat, vitae <br>
+                        sagittis arcu. Quisque viverra dui <br>
+                        purus, at rutrum nibh suscipit ut. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+{% endblock beautiful %}
+
+
+{% block images %}
+    <section class="page-3d">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page3-blank5">
+                    <div class="page3-morbi">
+                        <h2>Morbi a gravida turpis</h2>
+                        <hr>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis <br>
+                            montes, nascetur ridiculus mus. Quisque pharetra <br>
+                            mauris in libero vaius tristique. Etiam tristique <br>
+                            pellentesque metus at consequat.
+                        </p>
+                        <a href="{% url 'page2' %}"><button type="button" class="page3-btn2">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="page3-forthimage">
+                    <img src="{{images.page3_img4.url}}" alt="">
+                    <h6>Quisque pharetra</h6>
+                    <p>Etiam tristique metus</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+{% endblock images %}
+
+
+   <!-- CONTACT PAGE start here  -->
+{% block contact %} {% include 'contact.html' %} {% endblock contact %}
+<!-- CONTACT PAGE ends here  -->
+
+
+<!-- FOOTER  starts here -->
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+<!-- FOOTER  ends here -->

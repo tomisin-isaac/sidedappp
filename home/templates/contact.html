@@ -1,0 +1,63 @@
+<section class="contact-page">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="blankz">
+                <div class="text-5">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-2">
+                            <div class="contact-media">
+                                <i class="fa fa-phone-square fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <div>
+                                <p> 010-020-0340</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-2">
+                            <div class="contact-media">
+                                <i class="fa fa-envelope fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <div>
+                                <p> info@company.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-2">
+                            <div class="contact-media">
+                                <i class="fa fa-phone-square fa-4x"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-5">
+                            <div>
+                                <p>6120 Suspendisse ultricies
+                                    Scelerisque tellus, <br> ID 10260
+                                    Magna aliquet porttitor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="form">
+                <form action="{% url 'index' %}" method="POST">
+                {% csrf_token %}
+                    <input id="input" type="text" placeholder="Name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" name="name" >
+                    <br>
+                    <br>
+                    <input id="input" type="email" placeholder="Email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" name="email">
+                    <br>
+                    <br>
+                    <textarea id="input" name="message" id="" cols="20" rows="3" placeholder="Messages" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" ></textarea>
+                    <button  type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
